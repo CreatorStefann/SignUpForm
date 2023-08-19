@@ -1,0 +1,56 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.stanga {
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover; /* or "contain" depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 100vh;
+}  
+
+.main {
+    display: flex;
+}
+
+.container-logo {
+    background-color: rgba(0, 0, 0, 0.479);
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+img[alt="logo ODIN"] {
+    width: 100px;
+    
+}
+
+h1 {
+    font-family: my-cool-font, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    margin-top: 170px;
+    margin-left: 50px;
+    margin-right: 150px;
+    font-size: large;
+    font-weight: 400;
+}
+
+span {
+    font-style: italic;
+}
