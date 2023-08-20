@@ -1,21 +1,23 @@
 @font-face {
     font-family: my-cool-font;
-    src: url(./fonts/Norse-Bold.otf);
+    src: url(fonts/Norse-Bold.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
+
 }
 
 .stanga {
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
-    background-size: cover; /* or "contain" depending on what you want */
+    background-size: cover;
+    /* or "contain" depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
     width: 600px;
     height: 100vh;
-}  
+}
 
 .main {
     display: flex;
@@ -33,7 +35,7 @@
 
 img[alt="logo ODIN"] {
     width: 100px;
-    
+
 }
 
 h1 {
@@ -43,14 +45,104 @@ h1 {
     font-size: 100px;
 }
 
-p {
+#inceputparagraf {
     margin-top: 170px;
     margin-left: 50px;
     margin-right: 150px;
-    font-size: large;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 span {
     font-style: italic;
+}
+
+.formularsus {
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: white;
+
+}
+
+.containerformular {
+    display: flex;
+    gap: 100px;
+
+}
+
+.ceva1 {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.247);
+}
+
+.stform,
+.drform {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 5px 2px 2px rgba(17, 1, 1, 0.219);
+}
+
+.butoane {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.butoane p {
+    margin-top: 30px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #596D48;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.invizibilu {
+    color: red;
+    font-size: 12px;
+}
+
+.vizibil{
+    visibility: hidden;
 }

@@ -17,9 +17,80 @@
             </div>
         </div>
         <div class="dreapta">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started. <br> <br> You <span>know</span> you want to.</p>
+            <p id="inceputparagraf">This is not a real online service! You know you need something like this in your
+                life to help you realize
+                your deepest dreams. Sign up <span>now</span> to get started. <br> <br> You <span>know</span> you want
+                to.</p>
+            <form action="#">
+                <div class="ceva1">
+                <div class="formularsus">
+                    <h2>Let's do this!</h2>
+                    <div class="containerformular">
+                        <div class="stform">
+                            <p>
+                                <label for="fname">FIRST NAME</label>
+                                <br>
+                                <input type="text" id="fname" name="first name">
+                            </p>
+                            <p>
+                                <label for="email">EMAIL</label>
+                                <br>
+                                <input type="email" id="email" name="email">
+                            </p>
+                            <p>
+                                <label for="pass">PASSWORD</label>
+                                <br>
+                                <input type="password" id="pass" name="password" class="error">
+                            <p class="invizibilu">* Passwords do not match</p>
+                            </p>
+                        </div>
+                        <div class="drform">
+                            <p>
+                                <label for="lname">LAST NAME</label>
+                                <br>
+                                <input type="text" id="lname" name="last name">
+                            </p>
+                            <p>
+                                <label for="phone">PHONE NUMBER</label>
+                                <br>
+                                <input type="tel" id="phone" name="phone">
+                            </p>
+                            <p>
+                                <label for="cfpass">CONFIRM PASSWORD</label>
+                                <br>
+                                <input type="password" id="cfpass" name="confirm password" class="error">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="butoane">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+
         </div>
     </div>
+    <script>
+        const parola1 = document.querySelector('#pass');
+        const parola2 = document.querySelector('#cfpass');
+        const par = document.querySelector('.invizibilu');
+        const validare = () => {
+            if (parola1.value === parola2.value && parola1.value != NULL) {
+                parola1.classList.remove('error');
+                parola2.classList.remove('error');
+                par.classList.add('vizibil');
+            } else {
+                parola1.classList.add('error');
+                parola2.classList.add('error');
+                par.classList.remove('vizibil');
+            }
+        };
+        parola1.addEventListener('input', validare);
+        parola2.addEventListener('input', validare);
+
+    </script>
 </body>
 
 </html>
